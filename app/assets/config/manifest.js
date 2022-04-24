@@ -2,3 +2,18 @@
 //= link_directory ../stylesheets .css
 //= link_tree ../../javascript .js
 //= link_tree ../../../vendor/javascript .js
+//= link jquery-3.2.1.min.js
+//= link popper.min.js
+//= link bootstrap.min.js
+//= link jquery.superslides.min.js
+//= link bootstrap-select.js
+//= link inewsticker.js
+//= link bootsnav.js
+//= link images-loded.min.js
+//= link isotope.min.js
+//= link owl.carousel.min.js
+//= link baguetteBox.min.js
+//= link form-validator.min.js
+//= link contact-form-script.js
+//= link custom.js
+
