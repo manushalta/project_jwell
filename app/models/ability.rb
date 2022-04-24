@@ -3,14 +3,20 @@ class Ability
 
   def initialize(user)
       
-      user ||= User.new # guest user (not logged in)
-      if user.admin?
+      user ||= current_user
+      if user.is?("superadmin")
         can :manage, :all
-      else
+
+      elsif user.is?("admin")
         can :read, :all
+        can :create, :all
+
+      elsif user.is?("member")
+        puts "========#{user}=========================="
+        can :read, :all
+        can :update, :all
+        can :create, :all
+
       end
-        
-      can :update, Article, :published => true
-    
   end
 end
